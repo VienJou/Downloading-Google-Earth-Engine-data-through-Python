@@ -1,0 +1,185 @@
+{
+  "metadata": {
+    "description": "Comprehensive flooding event dataset with file paths (Corrected Version)",
+    "version": "4.0",
+    "generated_timestamp": "2025-10-07T23:06:27.058939",
+    "total_records": 6891,
+    "gage_records": 4246,
+    "hwm_records": 2645,
+    "data_sources": {
+      "gage_2016_2017": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/Unified_Peak_Data_2016_2017_with_ID(1006).csv",
+      "gage_2018_later": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/Unified_Peak_Data_2018_and_later_with_ID(1006).csv",
+      "hwm_2016_2017": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/matched_records_1947_with_ID_2016_2017(1006).csv",
+      "hwm_2018_later": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/matched_records_698_with_ID_2018_and_later(1006).csv"
+    },
+    "file_directories": {
+      "numpy": {
+        "embedding_1Y_later": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/embedding_1Y_later",
+        "embedding_1Y_early": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/embedding_1Y_early"
+      },
+      "weather": {
+        "gage_2016_2017": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/gage_2016_2017_24h",
+        "gage_2018_later": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/gage_2018_later_24h",
+        "hwm_2016_2017": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/hwm_2016_2017_24h",
+        "hwm_2018_later": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/hwm_2018_later_24h"
+      }
+    },
+    "file_counts": {
+      "numpy_files": {
+        "embedding_1Y_later": 3896,
+        "embedding_1Y_early": 2995
+      },
+      "weather_files": {
+        "gage_2016_2017": 1949,
+        "gage_2018_later": 2297,
+        "hwm_2016_2017": 1947,
+        "hwm_2018_later": 698
+      }
+    },
+    "file_matching_stats": {
+      "records_with_numpy": 6891,
+      "records_with_weather": 6891,
+      "records_with_both": 6891,
+      "records_with_elevation_m": 6855,
+      "records_with_height_above_gnd_m": 3743,
+      "records_with_both_elev_height": 3720,
+      "matching_rate_numpy": "100.00%",
+      "matching_rate_weather": "100.00%",
+      "matching_rate_both": "100.00%",
+      "matching_rate_both_elev_height": "53.98%"
+    },
+    "processing_stats": {
+      "gage_2016_2017": {
+        "total": 1949,
+        "with_numpy": 1949,
+        "with_weather": 1949,
+        "with_elevation": 1948,
+        "with_height": 1383,
+        "with_both_elev_height": 1382
+      },
+      "gage_2018_later": {
+        "total": 2297,
+        "with_numpy": 2297,
+        "with_weather": 2297,
+        "with_elevation": 2294,
+        "with_height": 66,
+        "with_both_elev_height": 66
+      },
+      "hwm_2016_2017": {
+        "total": 1947,
+        "with_numpy": 1947,
+        "with_weather": 1947,
+        "with_elevation": 1928,
+        "with_height": 1751,
+        "with_both_elev_height": 1739
+      },
+      "hwm_2018_later": {
+        "total": 698,
+        "with_numpy": 698,
+        "with_weather": 698,
+        "with_elevation": 685,
+        "with_height": 543,
+        "with_both_elev_height": 533
+      }
+    },
+    "notes": [
+      "numpy_file and weather_file fields contain full absolute paths",
+      "Gage data uses prefix 'gage_' for files",
+      "HWM data uses prefix 'HWM_' for files",
+      "2016-2017 data uses embedding_1Y_later directory",
+      "2018+ data uses embedding_1Y_early directory",
+      "CORRECTED: For gage data, elevation_m comes from CSV elevation_m field",
+      "CORRECTED: For gage data, height_above_gnd_m comes from CSV height_above_gnd_m field (converted from ft)",
+      "CORRECTED: For hwm data, elevation_m comes from CSV elev_ft_m field (converted from elev_ft)",
+      "CORRECTED: For hwm data, height_above_gnd_m comes from CSV height_above_gnd_m field (converted from height_above_gnd ft)",
+      "All elevation values are in meters"
+    ]
+  },
+  "data": [
+    {
+      "ID": 10001,
+      "latitude": 42.95753,
+      "longitude": -91.62403,
+      "Ground_Elevation_m": 241.07,
+      "site_no": "IAFAY24003",
+      "station_id": "IAFAY24003",
+      "peak_date": "2016-08-25 12:00:00",
+      "elevation_m": 245.799864,
+      "peak_stage": 245.799864,
+      "event": "August IA Flood",
+      "source": "filtered_peaks",
+      "height_above_gnd_m": null,
+      "data_type": "gage",
+      "numpy_file": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/embedding_1Y_later/gage_10001.npz",
+      "weather_file": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/gage_2016_2017_24h/gage_10001.csv",
+      "period": "2016_2017"
+    },
+    {
+      "ID": 10002,
+      "latitude": 42.957825,
+      "longitude": -91.623983,
+      "Ground_Elevation_m": 241.07,
+      "site_no": "IAFAY24004",
+      "station_id": "IAFAY24004",
+      "peak_date": "2016-08-25 12:00:00",
+      "elevation_m": 246.055896,
+      "peak_stage": 246.055896,
+      "event": "August IA Flood",
+      "source": "filtered_peaks",
+      "height_above_gnd_m": null,
+      "data_type": "gage",
+      "numpy_file": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/embedding_1Y_later/gage_10002.npz",
+      "weather_file": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/gage_2016_2017_24h/gage_10002.csv",
+      "period": "2016_2017"
+    },
+    {
+      "ID": 10003,
+      "latitude": 42.99784,
+      "longitude": -91.65801,
+      "Ground_Elevation_m": 249.35,
+      "site_no": "IAFAY24027",
+      "station_id": "IAFAY24027",
+      "peak_date": "2016-08-25 12:00:00",
+      "elevation_m": 253.828296,
+      "peak_stage": 253.828296,
+      "event": "August IA Flood",
+      "source": "filtered_peaks",
+      "height_above_gnd_m": null,
+      "data_type": "gage",
+      "numpy_file": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/embedding_1Y_later/gage_10003.npz",
+      "weather_file": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/gage_2016_2017_24h/gage_10003.csv",
+      "period": "2016_2017"
+    },
+    {
+      "ID": 10004,
+      "latitude": 42.997987,
+      "longitude": -91.658455,
+      "Ground_Elevation_m": 250.02,
+      "site_no": "IAFAY24028",
+      "station_id": "IAFAY24028",
+      "peak_date": "2016-08-25 19:03:10",
+      "elevation_m": 254.26416000000003,
+      "peak_stage": 254.26416000000003,
+      "event": "August IA Flood",
+      "source": "filtered_peaks",
+      "height_above_gnd_m": null,
+      "data_type": "gage",
+      "numpy_file": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/embedding_1Y_later/gage_10004.npz",
+      "weather_file": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/gage_2016_2017_24h/gage_10004.csv",
+      "period": "2016_2017"
+    },
+    {
+      "ID": 2702,
+      "latitude": 35.769113,
+      "longitude": -95.216381,
+      "site_no": "OKMUS28868",
+      "elevation_m": 156.88970400000005,
+      "peak_stage": 156.88970400000005,
+      "height_above_gnd_m": 2.8498799999999997,
+      "data_type": "hwm",
+      "numpy_file": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/embedding_1Y_early/HWM_2702.npz",
+      "weather_file": "/u/wz53/alphaearth/Flooding_event_/Flood_dataset/hwm_2018_later_24h/HWM_2702.csv",
+      "period": "2018_later"
+    }
+  ]
+}
